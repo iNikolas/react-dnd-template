@@ -1,6 +1,7 @@
 {
   "name": "react_dnd",
   "version": "0.1.0",
+  "homepage": "https://iNikolas.github.io/react-dnd-template",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -24,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "postinstall": "patch-package",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -50,6 +53,7 @@
   },
   "devDependencies": {
     "@types/react-dnd-multi-backend": "^6.0.1",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.6.2"
   }
 }
